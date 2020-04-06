@@ -37,7 +37,36 @@ public class InventoryManager {
 		System.out.print("Inventory ID:");
 		int inventoryid = input.nextInt();
 		if(Inventory.id == inventoryid) {
-			System.out.println("the inventory to be edited is " + inventoryid);
+			int num = -1;
+			while (num !=5) {
+				System.out.println("** Inventory Info Edit Menu **");
+				System.out.println(" 1. Edit Id");
+				System.out.println(" 2. Edit Name"); 
+				System.out.println(" 3. Edit weight");
+				System.out.println(" 4. Edit size");
+				System.out.println(" 5. Exit");
+				System.out.println("Select one number between 1 - 5:");
+				num=input.nextInt();
+				if (num == 1) {
+					System.out.print("Inventory ID:");
+					Inventory.id = input.nextInt();
+				}
+				else if (num == 2) {
+					System.out.print("Inventory name:");
+					Inventory.name = input.next();
+				}  
+				else if (num == 3) {
+					System.out.print("Inventory weight:");
+					Inventory.weight = input.nextInt();
+				}
+				else if (num == 4) {
+					System.out.print("Inventory size:");
+					Inventory.size = input.next();
+				}
+				else {
+					continue;
+				}
+			}
 		}
 	}
 
