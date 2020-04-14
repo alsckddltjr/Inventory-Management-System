@@ -11,7 +11,7 @@ public class MenuManager {
 			System.out.println(" 1. Add Inventory");
 			System.out.println(" 2. Delete Inventory"); 
 			System.out.println(" 3. Edit Inventory");
-			System.out.println(" 4. View Inventory");
+			System.out.println(" 4. View Inventorys");
 			System.out.println(" 5. Exit");
 			System.out.println("Select one number between 1 - 5:");
 			num=input.nextInt();
@@ -25,7 +25,7 @@ public class MenuManager {
 				inventoryManager.editInventory();
 			}
 			else if (num == 4) {
-				inventoryManager.viewInventory();
+				inventoryManager.viewInventorys();
 			}
 			else {
 				continue;
